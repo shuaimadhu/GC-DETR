@@ -30,5 +30,5 @@ To address these challenges, we propose **GC-DETR** — a geometry-conditioned r
 |-----------------------|------------------------|
 | AP<sub>50:95</sub>    | +1.85%                 |
 | AP<sub>75</sub>       | +3.53%                 |
-| AP<sub>small</sub>    | +3.57%                 |
+| AP<sub>Small</sub>    | +3.57%                 |
 | Model Parameters      | -16.3% (reduction)     |
