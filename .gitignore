@@ -1,0 +1,26 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# pytest cache
+.pytest_cache/
+
+# IDE files
+.vscode/
+.idea/
+
+# macOS metadata
+.DS_Store
