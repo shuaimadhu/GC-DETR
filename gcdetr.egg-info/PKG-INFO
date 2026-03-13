@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: gcdetr
+Version: 0.1.0
+Summary: GC-DETR: Geometry-Conditioned Real-Time Object Detection for UAV-based Open-Water Scenarios
+Requires-Python: >=3.8
