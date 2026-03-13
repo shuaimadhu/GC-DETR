@@ -1,2 +1,35 @@
-# GC-DETR-Geometry-Conditioned-Real-Time-Object-Detection
-Detecting objects in open-water environments is crucial for improving unmanned aerial vehicles(UAVs) visual perception. However, most existing object detection methods are designed for conventional aerial imagery and struggle to address the unique challenges in UAV-based open-water images, including drastic scale variations and complex backgrounds. In addition, these models often lack an effective mechanism to ensure consistency between classification confidence and localization quality, which limits the reliability of detection results. To address these challenges, we propose GC-DETR, a geometry-conditioned real-time object detector specifically designed for UAV-based open-water scenarios. First, we introduce a novel Sensor-Aware Query Module (SAQM), which enhances pose-related priors in the initialized queries with negligible computational overhead, establishing a relationship between UAV pose and image features. Second, we design the Spectral Decomposition-based Decoupled Deformable Attention (SDDA) module. This module reconstructs the sampling range using object shape information and employs a spectral decomposition-based geometric decoupling mechanism to diversify multi-head attention, enabling more accurate feature alignment and stronger feature representation in complex backgrounds. Finally, we propose the IoU Prediction Quality Head (IOUPQH), which reorders classification confidence scores according to IoU-based localization quality, ensuring consistency between classification logic and localization accuracy. Extensive experiments on multiple open-water datasets demonstrate the effectiveness of the proposed method. Compared with state-of-the-art detectors, GC-DETR improves AP$_{50:95}$ by 1.85\% and AP$_{\text{small}}$ by 3.57\% on the SeaDronesSee dataset while reducing the number of parameters by 16.3\%. Moreover, GC-DETR achieves a 2.7\% improvement in AP$_{50:95}$ on a terrestrial aerial traffic dataset.
+# GC-DETR: Geometry-Conditioned Real-Time Object Detector for UAV Open-Water Scenarios
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## 📝 Overview
+Detecting objects in open-water environments is crucial for improving unmanned aerial vehicles (UAVs) visual perception. However, most existing object detection methods are designed for conventional aerial imagery and struggle to address the unique challenges in UAV-based open-water images, including:
+- Drastic scale variations of objects
+- Complex and cluttered backgrounds
+- Lack of consistency between classification confidence and localization quality
+
+To address these challenges, we propose **GC-DETR** — a geometry-conditioned real-time object detector specifically designed for UAV-based open-water scenarios.
+
+## 🔑 Core Innovations
+### 1. Sensor-Aware Query Module (SAQM)
+- Enhances pose-related priors in the initialized queries with **negligible computational overhead**
+- Establishes an explicit relationship between UAV pose and image features
+
+### 2. Spectral Decomposition-based Decoupled Deformable Attention (SDDA)
+- Reconstructs the sampling range using object shape information
+- Employs spectral decomposition-based geometric decoupling to diversify multi-head attention
+- Enables more accurate feature alignment and stronger representation in complex backgrounds
+
+### 3. IoU Prediction Quality Head (IOUPQH)
+- Reorders classification confidence scores according to IoU-based localization quality
+- Ensures consistency between classification logic and localization accuracy
+
+## 📊 Experimental Results
+### Open-Water Dataset (SeaDronesSee)
+| Metric                | Improvement (vs. SOTA) |
+|-----------------------|------------------------|
+| AP$_{50:95}$          | +1.85%                 |
+| AP$_{75}$             | +3.53%                 |
+| AP$_{\text{small}}$   | +3.57%                 |
+| Model Parameters      | -16.3% (reduction)     |
+
