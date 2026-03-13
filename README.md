@@ -28,8 +28,7 @@ To address these challenges, we propose **GC-DETR** — a geometry-conditioned r
 ### Open-Water Dataset (SeaDronesSee)
 | Metric                | Improvement (vs. SOTA) |
 |-----------------------|------------------------|
-| AP$_{50:95}$          | +1.85%                 |
-| AP$_{75}$             | +3.53%                 |
-| AP$_{\text{small}}$   | +3.57%                 |
+| AP<sub>50:95</sub>    | +1.85%                 |
+| AP<sub>75</sub>       | +3.53%                 |
+| AP<sub>small</sub>    | +3.57%                 |
 | Model Parameters      | -16.3% (reduction)     |
-
