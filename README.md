@@ -32,3 +32,24 @@ To address these challenges, we propose **GC-DETR** — a geometry-conditioned r
 | AP<sub>75</sub>       | +3.53%                 |
 | AP<sub>Small</sub>    | +3.57%                 |
 | Model Parameters      | -16.3% (reduction)     |
+
+
+## Datasets
+
+The experiments in this study were conducted on three publicly available aerial datasets.
+
+### SeaDronesSee
+Dataset access:  
+https://seadronessee.cs.uni-tuebingen.de/
+
+### AFO
+Dataset access:  
+https://www.kaggle.com/datasets/jangsienicajzkowy/afo-aerial-dataset-of-floating-objects
+
+### AU-AIR
+Dataset access:  
+https://www.modelscope.cn/datasets/OmniData/AU-AIR
+
+The original datasets are not redistributed in this repository. Please download the datasets from the corresponding access links above.
+
+The dataset split information, preprocessing settings, configuration files, training and inference settings, evaluation scripts, and other non-sensitive reproducibility materials used in our experiments will be provided in this repository.
